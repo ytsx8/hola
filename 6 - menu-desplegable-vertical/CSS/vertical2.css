@@ -1,0 +1,32 @@
+*{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+}
+.nav{
+    width: 100px;
+}
+.nav a{
+    display: inline;
+}
+.li .ul{
+    /*display: none;*/
+    position: absolute;
+    left: 100%;
+    top: 100%;
+}
+.ul{
+    position: relative;
+}
+.li{
+    width: 150px;
+}
+.ul .li{
+    background-color: aqua;
+}
+.ul .ul{
+    position: relative;
+    top: bottom;
+    ;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario para buscar productos supermercado</title>
+    <datalist id="supermercado">
+        <option value="zapatos">
+    </datalist>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        *{
+            color: #efefef;
+            background-color: #333;
+            font-size: 12px;
+            font-family: poppins;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario para buscar productos supermercado</h1>
+    <form action="https://www.lidl.es/es/search?", method="get">
+        <label for="buscar">buscar productos</label>
+        <input type="search" list="supermercado" name="query">
+        <input type="submit">
+    </form>
+</body>
+</html>

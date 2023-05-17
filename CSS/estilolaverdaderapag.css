@@ -1,0 +1,100 @@
+/* TODO*/
+*{
+    font-family: poppins;
+}
+/*cuerpo de la pag*/
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #e84393;
+    background-color: #5d4257;
+    background-image: linear-gradient(315deg, #5d4257 0%, #a5c7b7 74%);    background-repeat: no-repeat;
+}
+/*Header con texto en movimiento*/
+.cabecera {
+    text-align: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: bold;
+    z-index: 100;
+    display: flex;
+}
+  /* Css - Texto con Degradado */
+  a {
+    animation: fluido 5s ease-in-out infinite;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 300%;
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  h2 {
+    animation: fluido 5s ease-in-out infinite;
+    background: linear-gradient(-45deg, #3a3432, #6d4a57, #2a4853, #387568);
+    background-size: 300%;
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  @keyframes fluido {
+      0% { background-position: 0 50% }
+      50% { background-position: 100% 50% }
+      100% { background-position: 0 50% }
+  }
+/*Menu*/
+nav {
+  float: left;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden; 
+}
+
+nav ul li {
+  float: left;
+  font-family: poppins;
+  font-size: 18px;
+}
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background: #60bcc895;
+}
+/*container*/
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    float: left;
+}
+.articulos{
+    width: 40%;
+    text-align: center;
+}
+.imagenes{
+    top: 230px;
+    position: absolute;
+    width: 15%;
+    left: 30px;
+}
+.imagenes_derecha{
+    top: 230px;
+    position: absolute;
+    width: 15%;
+    right: 50px;
+}
+img{
+    max-width: 100%; 
+}
+

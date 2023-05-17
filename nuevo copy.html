@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo 24/04/23</title>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/89ba2c3d62.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            font-family: Poppins;
+
+        }
+        .txtprincipal{
+            background-color: rgb(228, 228, 197);
+            border-radius: 15px;
+            margin-left: -6px;
+            margin-right: -6px;
+            margin-top: -9px;
+            justify-content: center; 
+            text-align: center;
+            display: flex;
+            padding-top: 0px;
+        }
+        li {
+            list-style-type: none;
+            margin-left: -40px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+        .menu{
+            top: 100px;
+            position: fixed;
+            width: 20%;
+        }
+        
+        .contenedor{
+            width: 80%;
+            position: relative;
+            left: 250px;
+            border: 1px solid black;
+        }
+        .imagen{
+            max-width: 100px;
+            position: relative;
+            margin-right: 10px;
+            float: left;
+
+        }
+        .historia{
+            font-family: ubuntu;
+            margin-top: 10px;
+            margin-right: 20px;
+
+
+        }
+        .footer{
+
+            margin-top: 150px;
+            margin-left: -8px;
+            margin-right: -8px;
+            margin-bottom: -8px;
+            padding: 100px 15%;
+            background: #333;
+            color: #efefef;
+            display: flex;
+            
+        }
+        .footer div{
+            text-align: center;
+        }
+        .col-2{
+            flex-grow: 2;
+        }
+        .social-icons{
+            margin-top: 30px;
+        }
+        .social-icons i{
+            font-size: 22px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        form input{
+            width: 400px;
+            height: 45px;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            outline: none;
+            border: none;
+        }
+        form button{
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            border-radius: 30px;
+            padding: 10px 30px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(245, 245, 220);">
+    <div class="txtprincipal">
+        <header>
+            <h1>Restaurante los pakos</h1>
+    </div>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Contactos</a></li>
+        </ul>
+
+
+
+    </nav>
+    <main class="contenedor">
+        <div class="imagen">
+            <img class="imagen" src="./imagenes/tgb.jpg" alt="imagen mitica" >
+        </div>
+        <div class="historia">
+            Historia del local
+            <p>Los cimientos de este mítico edificio
+                Madrid siguió creciendo, a pesar de que a la muerte de Felipe II, su sucesor Felipe III, traslada, solo
+                temporalmente, la Corte a Valladolid. Y es justamente en esta época (concretamente en 1590) cuando tenemos
+                constancia de la existencia del edificio que hoy alberga Botín.
+                
+                Su propietario solicitó el «Privilegio de exención de huéspedes», de cuyo documento consta acreditación.
+                Este impuesto lo pagaban aquellos propietarios de un inmueble de más de una planta que no deseaban albergar
+                en él a miembros de los cortejos reales que llegaban a Madrid y que no se hospedaban ni en Palacio ni en las
+                casas de los nobles.
+            </p>
+            <p>
+                Un cocinero llamado Jean Botín
+                En 1606, la Corte vuelve a Madrid y en 1620, con la reforma efectuada en la Plaza Mayor (antigua Plaza del
+                Arrabal), la zona se convierte en el principal enclave comercial de la ciudad: zapateros, curtidores,
+            cuchilleros, latoneros, herradores, las calles de la zona adoptaron el nombre de los oficios que en ellas se
+            ejercían: Ribera de Curtidores, Plaza de Herradores y…como no, Calle Cuchilleros.
+            
+            Es en una de estas calles donde estableció su negocio un cocinero francés llamado Jean Botín, que llegó a
+            Madrid junto con su esposa de origen asturiano, con la intención de trabajar para algún noble de la Corte de
+            los Austrias. En 1725, un sobrino de la esposa de Botín, Candido Remis, abrió una pequeña posada en la calle
+            Cuchilleros y realizó una reforma en la planta baja del edificio, cerrando los soportales existentes.
+            
+            De esta obra ha quedado constancia en una piedra de la entrada en la que figura la fecha. De esta fecha data
+            también el horno de leña de la casa, que aún hoy en día sigue atrayendo a los comensales con sus tentadores
+            olores. </p>
+             
+            <img src="./imagenes/tenedor.png" style="position: absolute; width: 50px;height: 50px;right: -25px;top: 391px;">
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="col-1">
+            <h3>Mapa</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11965.582623883098!2d2.17450885!3d41.43063585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bdb85c47c11b%3A0x2fa9fe0ca3ae28f5!2sMercadona!5e0!3m2!1ses!2ses!4v1682329173817!5m2!1ses!2ses"
+                width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="col-2">
+            <h3>NEWSLETTER</h3>
+            <form>
+                <input type="email" placeholder="Your Email Address" required>
+                <br>
+                <button type="submit">SUBSCRIBE NOW</button>
+            </form>
+        </div>
+        <div class="social-icons">
+            <h3>Redes Sociales</h3>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-behance"></i>
+
+        </div>
+    </footer>
+</body>
+
+</html>

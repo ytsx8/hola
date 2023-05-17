@@ -1,0 +1,120 @@
+.titulo{
+    justify-content: center;
+    text-align: center;
+}
+html{
+    background: #333;
+    color: #efefef;
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.principal{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+}
+.botones{
+    margin-bottom: 10px;
+    outline: solid red;
+    width:300px;
+    height:20px;
+    background: #f77a7a;
+    color: #efefef;
+    text-shadow: 1px 2px black;
+}
+
+.caja{
+    outline: solid;
+    width: 50px;
+    height: 50px;
+    display:flex;
+    border: 1px solid black;
+    background: rgba(100,100,100,0.5); 
+    transform-style: preserve-3d;
+    
+}
+.grupocajas{
+    outline: solid;
+    width:300px;
+    height:200px;
+    display:flex;
+    margin-top: 50px;
+}
+.boton1:hover ~ .grupocajas > .caja{
+    transform: matrix(0.866,0.7,-0.8,0.866,0,0);
+    cursor: pointer;
+}
+.boton1:hover{
+    background-color: green;
+}
+.boton2:hover ~ .grupocajas > .caja{
+    transform: rotateY(80deg);
+    cursor: pointer;
+}
+.boton2:hover{
+    background-color: green;
+}
+.boton3:hover ~ .grupocajas > .caja{
+    transform: skewX(40deg);
+    cursor: pointer;
+}
+.boton3:hover{
+    background-color: green;
+}
+.boton4:hover ~ .grupocajas > .caja{
+    transform: scale(2,2);
+    cursor: pointer;
+}
+.boton4:hover{
+    background-color: green;
+}
+.boton6:hover ~ .grupocajas > .caja{
+    transform: none;
+    cursor: pointer;
+}
+.boton6:hover{
+    background-color: green;
+}
+.letraboton{
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
+.ejemplo > .botones:hover ~ .letraboton > .hover1{
+    display: block;
+}
+/*cubo en perspectiva*/
+.boton5:hover ~ .grupocajas > .ex1{
+    perspective: 150px;
+    cursor: pointer;
+}
+.boton5:hover{
+    background-color: green;
+}
+ 
+  .cube {
+    font-size: 4em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-45deg) rotateY(30deg);
+  }
+  
+  .side {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    background: rgba(100,100,100,0.5);
+    border: 1px solid red;
+    text-align: center;
+    line-height: 2em;
+  }
+  
+  .front {transform: translateZ(1em);}
+  .top {transform: rotateX(90deg) translateZ(1em);}
+  .right {transform: rotateY(90deg) translateZ(1em);}
+  .left {transform: rotateY(-90deg) translateZ(1em);}
+  .bottom {transform: rotateX(-90deg) translateZ(1em);}
+  .back {transform: rotateY(-180deg) translateZ(1em);}

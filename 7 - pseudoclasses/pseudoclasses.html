@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercici de pseudoclasses en tarjetes</title>
+    <link rel="stylesheet" href="./CSS/pseudoclasses.css">
+</head>
+<body>
+    <header><h1>Exercici de pseudoclasses en tarjetes</h1></header>
+    <main class="container">
+        <article class="tarjeta">
+            <h2>Exemple 1:<br>:active / : link / :visited / :hover</h2>
+            <div>
+                <a class="enllac" href="https://www.google.es/" target="_blank">Google</a>
+                <a class="enllac" href="https://www.w3schools.com/tags/default.asp" target="_blank">3Wschools</a>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <h2>Exemple 2:<br>:first-child / :last-child</h2>
+            <div class="exemple2">
+                <p>Sóc el primer paràgraf</p>
+                <p>Sóc el segon paràgraf</p>
+                <p>Sóc el tercer paràgraf</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <h2>Exemple 3:<br>:first-of-type / :last-of-type</h2>
+            <div class="exemple3">
+                <div>Sóc el primer div</div>
+                <p>Sóc el primer paràgraf</p>
+                <span>Sóc el primer span</span>
+                <p>Sóc el segon paràgraf</p>
+                <div>Sóc el segon div</div>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <h2>Exemple 4:<br>:nth-child( ) / :nth-last-child( )</h2>
+            <div class="exemple4">
+                <ul class="li">
+                    <li>Sóc l'opció 1</li>
+                    <li>Sóc l'opció 2</li>
+                    <li>Sóc l'opció 3</li>
+                    <li>Sóc l'opció 4</li>
+                    <li>Sóc l'opció 5</li>
+                    <li>Sóc l'opció 6</li>
+                    <li>Sóc l'opció 7</li>
+                    <li>Sóc l'opció 8</li>
+                </ul>
+                <div><h4>el last comença per sota</h4></div>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <h2>Exemple 5:<br>:nth-of-type( ) / :nth-last-of-type( )</h2>
+            <div class="exemple5">primer div
+            <p>primer paràgraf</p>
+            <p>segon paràgraf</p>
+            <span>span</span>
+            <p>tercer paràgraf</p>
+            <div>segon div</div>
+        </div>
+        </article>
+        <article class="tarjeta">
+            <h2>Exemple 6:<br>:only-child( )
+            </h2>
+            <div class="exemple6">
+                <ul>
+                    <li>llista 1 primer li</li>
+                    <li>llista 1 segon li</li>                    
+                </ul>
+                <ul>
+                    <li>llista 2 primer li</li>
+                    <li>llista 2 segon li</li>
+                    <li>llista 2 tercer li</li>                  
+                </ul>
+                <ul>
+                    <li>llista 3 primer li</li>
+                </ul>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <h2>Exemple 7:<br>:only-of-type( )</h2>
+            <div class="exemple7">
+                <div>primer div</div>
+                <p>primer paràgraf</p>
+                <div>segon div</div>
+                <div>tercer div</div>
+                <div>quart div</div>
+            </div>
+            <div class="exemple7">
+                <div>primer div</div>
+                <p>primer paràgraf</p>
+                <div>segon div</div>
+                <p>segon paràgraf</p>
+                <div>tercer div</div>
+                <div>quart div</div>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <h2>Exemple 8:<br>:empty</h2>
+                <div class="exemple8">
+                    <ul>
+                        <li>element 1</li>
+                        <li>element 2</li>
+                        <li></li>
+                        <li>element 4</li>
+                        <li></li>
+                        <li>element 5</li>
+                        <li></li>
+                        <li>element 6</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="exemple8-2">
+                    <ul>
+                        <li>element 1</li>
+                        <li>element 2</li>
+                        <li></li>
+                        <li>element 4</li>
+                        <li></li>
+                        <li>element 5</li>
+                        <li></li>
+                        <li>element 6</li>
+                    </ul>
+                </div>            
+        </article>
+        <article class="tarjeta">
+            <h2>Exemple 9<br>:not(strong)</h2>
+            <div class="exemple9">
+                <ul>
+                    <li>llista 3 primer li</li>
+                </ul>
+                <ul>
+                    <li>llista 1 primer li</li>
+                    <li>llista 1 segon li</li>                    
+                </ul>
+                <ul>
+                    <li>llista 2 primer li</li>
+                    <li>llista 2 segon li</li>
+                    <li>llista 2 tercer li</li>                  
+                </ul>
+                <ul>
+                    <li>llista 3 primer li</li>
+                </ul>
+            </div>
+        </article>
+
+        
+    </main>
+    
+</body>
+</html>

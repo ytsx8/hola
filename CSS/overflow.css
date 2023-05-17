@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.movie {
+    margin: 10px;
+    align-items: center;
+    background-color: white;
+    width: 340px;
+    height: 540px;
+
+}
+
+.movie img {
+    width: 340px;
+    height: 540px;
+}
+
+.movie h2 {
+    text-align: center;
+    font-size: 0.975rem;
+    margin: 10px 0;
+    font-family: 'Ubuntu';
+
+}
+
+.movie h3 {
+    text-align: center;
+    font-size: 0.975rem;
+    margin: 10px 0;
+    font-family: 'Ubuntu';
+
+}
+
+.movie p {
+    text-align: justify;
+    /*font-size: 16px;*/
+    font-size: 0.975rem;
+    font-family: 'Ubuntu';
+
+}
+
+img {}
+
+.texto {
+    color: aliceblue;
+}
+
+.padrino3 {
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 30px;
+    font-family: 'Ubuntu';
+}
+
+.sinopsis {
+    width: 300px;
+    height: 500px;
+    margin: 20px;
+    display: none;
+    opacity: 0;
+}
+
+.movie:hover>.animacion {
+    display: none;
+
+}
+
+.movie:hover>.sinopsis {
+    display: block;
+    transition-duration: 1s;    
+    opacity: 1;
+}

@@ -1,0 +1,98 @@
+.grupcaixetes{
+    outline: solid;
+    width:300px;
+    height:150px;
+    display:flex;
+}
+.botones{
+    margin-bottom: 10px;
+    outline: solid red;
+    width:300px;
+    height:20px;
+    background: #333;
+    color: #efefef;
+}
+.principal{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.caixa{
+    outline: solid;
+    width: 25px;
+    height: 25px;
+    display:flex;
+
+}
+.boton1:hover ~ .grupcaixetes{
+    flex-direction: row;
+    cursor: pointer;
+}
+.boton2:hover ~ .grupcaixetes{
+    flex-direction: row-reverse;
+    cursor: pointer;
+}
+.boton3:hover ~ .grupcaixetes{
+    flex-direction: column;
+    cursor: pointer;
+}
+.boton4:hover ~ .grupcaixetes{
+    flex-direction: column-reverse;
+    cursor: pointer;
+}
+.boton5:hover ~ .grupcaixetes{
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.boton6:hover ~ .grupcaixetes{
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.boton7:hover ~ .grupcaixetes{
+    justify-content: center;
+    cursor: pointer;
+}
+.boton8:hover ~ .grupcaixetes{
+    justify-content: space-between;
+    cursor: pointer;
+}
+.boton9:hover ~ .grupcaixetes{
+    justify-content: space-around;
+    cursor: pointer;
+}
+.boton10:hover ~ .grupcaixetes{
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.boton1:hover{
+    background-color: green;
+}
+.boton2:hover{
+    background-color: green;
+}
+.boton3:hover{
+    background-color: green;
+}
+.boton4:hover{
+    background-color: green;
+}
+.boton5:hover{
+    background-color: green;
+}
+.boton6:hover{
+    background-color: green;
+}
+.boton7:hover{
+    background-color: green;
+}
+.boton8:hover{
+    background-color: green;
+}
+.boton9:hover{
+    background-color: green;
+}
+.boton10:hover{
+    background-color: green;
+}
+
+

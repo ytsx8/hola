@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ex5</title>
+    <style>
+        .rectangle {
+            width: 200px;
+            height: 350px;
+
+        }
+
+        .verd {
+            background-color: green;
+            border-radius: 10px;
+
+
+        }
+
+        .vermell {
+            background-color: red;
+        }
+
+        .blau {
+            background-color: blue;
+        }
+
+        .groc {
+            background-color: yellow;
+        }
+        .contenidor {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: stretch;
+            justify-content: space-around;
+            align-items: center;
+            
+            
+            
+
+            background-color: rgb(247, 165, 165);
+            margin-top: 10px;
+            /* diferentes modificadores
+            row: filas
+            row-reverse: apiladas a la derecha
+            column: columnas
+            column-reverse: apiladas por columnas */
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        comportament flex
+    </h1>
+    <hr>
+    <div class="contenidor">
+        <div class="rectangle verd">Caixa1<br>abcdefghijklmnopqrstuvwxyzabcdefg</div>
+            
+            
+        
+        <div class="rectangle vermell">
+            Caixa 2
+        </div>
+        <div class="rectangle blau">
+            Caixa 3
+        </div>
+        <div class="rectangle groc">
+            Caixa 4
+        </div>
+    </div>
+</body>
+
+</html>

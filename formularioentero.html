@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulario de Registro</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/89ba2c3d62.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      color: #efefef;
+      font-size: 15px;
+      font-family: poppins;
+    }
+
+    #cabecera {
+      width: 100%;
+      height: 10%;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      background-color: #334;
+    }
+
+    #imagen {
+      width: 30%;
+      position: relative;
+    }
+
+    nav {
+      height: 80px;
+      background-color: #191a1d;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: inline-block;
+      padding: 18px;
+    }
+
+    nav ul li {
+      float: left;
+    }
+
+    nav ul li a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 30px;
+    }
+
+    nav ul li a:hover {
+      background-color: #929fb3;
+    }
+
+    /*.formulario {
+         width: 70%;
+         align-items: center;
+      }*/
+    .form {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form input {
+      width: 40%;
+      height: 30px;
+      margin: 0.5rem;
+    }
+
+    .contenedor {
+      display: flex;
+    }
+
+
+    .footer {
+
+      margin-top: 150px;
+      margin-left: -8px;
+      margin-right: -8px;
+      margin-bottom: -8px;
+      padding: 10px 5%;
+      background: #336;
+      color: black;
+      display: flex;
+
+    }
+
+    .footer div {
+      text-align: center;
+    }
+
+    .col-2 {
+      flex-grow: 2;
+    }
+
+    .social-icons {
+      margin-top: 30px;
+    }
+
+    .social-icons i {
+      font-size: 22px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    form input {
+      width: 400px;
+      height: 45px;
+      border-radius: 4px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      outline: none;
+      border: none;
+    }
+
+    form select {
+      width: 383px;
+      height: 30px;
+      border-radius: 4px;
+      text-align: center;
+      margin-top: 10px;
+      margin-left: 9px;
+      outline: none;
+      border: none;
+    }
+
+    form button {
+      background: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      border-radius: 30px;
+      padding: 10px 30px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .form-control {
+      color: #333;
+    }
+  </style>
+</head>
+
+<body style="background: #333">
+  <div id="cabecera">
+    <h1>Cursos Colmenero</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Contacto</a></li>
+      <li><a href="#">Ubicación</a></li>
+      <li><a href="#">Sobre Nosotros</a></li>
+    </ul>
+  </nav>
+  <div class="contenedor">
+    <div id="imagen">
+      <img style="max-width: 100%" src="./imagenes/colmenero.PNG" alt="Imagen mauricio colmenero" />
+    </div>
+    <div class="form">
+      <form>
+        <input type="text" class="form-control" placeholder="Nombre" />
+        <input type="text" class="form-control" placeholder="Apellido" />
+        <input type="number" class="form-control" placeholder="Edad" min="16" max="70" />
+        <input type="email" class="form-control"  placeholder="E-mail">
+        <input type="tel" class="form-control" placeholder="Telefono" />
+        <input type="date" class="form-control" placeholder="Fecha de nacimiento" style="color: #191a1d" />
+        <select name="edad" class="form-control">
+          <option value="ESO" class="form-control">Educacion Secundaria Obligatoria
+          <option value="GM" class="form-control">Grado Medio
+          <option value="GS" class="form-control">Grado Superior
+          <option value="Bachillerato" class="form-control">Bachillerato
+          <option value="Universidad" class="form-control">Universidad
+          <option value="Nada" class="form-control">Nada
+        </select>
+      </form>
+    </div>
+     <center><img class="lamarca" src="./imagenes/lamarca.png" alt="Lamarca" style="width: 50px;height: 50px;"></center>
+  </div>
+
+  <footer class="footer">
+    <div class="col-1">
+      <h3>Mapa</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11965.582623883098!2d2.17450885!3d41.43063585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bdb85c47c11b%3A0x2fa9fe0ca3ae28f5!2sMercadona!5e0!3m2!1ses!2ses!4v1682329173817!5m2!1ses!2ses"
+        width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <div class="col-2">
+      <h3>NEWSLETTER</h3>
+      <form>
+        <input class="form-control" type="email" placeholder="Deja Tu Email Aqui" required>
+        <br>
+        <button type="submit">SUBSCRIBETE</button>
+      </form>
+    </div>
+    <div class="social-icons">
+      <h3>Redes Sociales</h3>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-behance"></i>
+    </div>
+  </footer>
+
+</body>
+
+</html>

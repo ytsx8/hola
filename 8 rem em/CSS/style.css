@@ -1,0 +1,47 @@
+
+html{
+    font-size: 16px;
+}
+h1{
+    justify-content: center;
+    text-align: center;
+    color: #efefef;
+}
+:root{
+    --colorVoraTitol:#70685e;
+    --colorVisitat:#0fec12e2;
+    --colorVoraTarje2:#5555cf;
+}
+.tarjeta{
+    border: 6px dotted var(--colorVoraTitol);
+    width: 325px;
+    height: 500px;
+    margin: 10px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+div{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+p{
+    font-size: 1.1em;
+}
+span{
+    font-size: 1.9rem;
+}
+@media only screen and (max-width: 845px) {
+    body {
+        background-color: lightblue;
+        font-size: 1.6em;
+    }
+}
+@media only screen and (min-width: 846px) {
+    body {
+        background-color: #333;
+        font-size: 1em;
+    }
+  }

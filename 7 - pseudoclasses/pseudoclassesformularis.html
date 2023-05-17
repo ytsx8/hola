@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudoclasses per a Formularis</title>
+    <link rel="stylesheet" href="./CSS/pseudoclasses.css">
+</head>
+<body>
+    <h1>Pseudoclasses per a Formularis</h1>
+    <hr>
+    <form action="#">
+        <article class="tarjeta2">
+            <h3>:focus</h3>
+            <div class="exemple8">
+                <label for="ex1">primer input</label>
+                <input type="text" name="ex1" id="ex1"><br>
+                <label for="ex2">segon input</label>
+                <input type="text" name="ex2" id="ex2"><br>
+            </div>
+        </article>
+
+        <article class="tarjeta2">
+            <h3>:disable</h3>
+            <div class="exemple9"><label for="ex9">Input deshabilitat</label><br>
+            <input type="text" name="ex9" id="ex9" disabled placeholder="Color deshabilitat">
+            </div>
+        </article>
+
+        <article class="tarjeta2">
+            <h3>:valid / :invalid</h3>
+            <div><label for="ex10">Valid / Invalid</label><br>
+            <input type="email" name="ex10" id="ex10>" placeholder="correo@servidor.cat">
+            </div>
+        </article>
+
+        <article class="tarjeta2">
+            <h3>:required</h3>
+            <div class="ex11">
+                <input type="text" name="ex11" id="ex11>" placeholder="Text obligatori" required>
+            </div>
+        </article>
+
+        <article class="tarjeta2">
+            <h3>:checked</h3>
+            <div class="ex12">
+                <label for="ex12">Casella per defecte</label>
+                <input type="checkbox" name="ex12" id="ex12" checked><br>
+                <label for="ex12">Casella per no defecte</label>
+                <input type="checkbox" name="ex12" id="ex12b">
+            </div>
+            
+        </article>
+
+        <article class="tarjeta2">
+            <h3>:checked amb radio</h3>
+            <div class="ex13">
+                <label for="ex13">Menor de 12 anys</label>
+                <input type="radio" name="ex13" id="ex13" checked><br>
+                <label for="ex13">De 12 a 18 anys</label>
+                <input type="radio" name="ex13" id="ex13"><br>
+                <label for="ex13">Major de 18 anys</label>
+                <input type="radio" name="ex13" id="ex13">
+            </div>            
+        </article>
+
+        <article class="tarjeta2">
+            <h3>:in-range</h3>
+            <div class="ex14">
+                <label for="ex14">Entra un número entre 5 i 25</label>
+                <input type="number" name="ex14" id="ex14" max="25" min="5"><br>
+                <span class="alerta">NÚMERO FORA DE RANG</span>               
+            </div> 
+                   
+        </article>
+
+
+    </form>
+           
+    
+</body>
+</html>

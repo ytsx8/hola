@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.movie {
+    margin: 10px;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+
+}
+
+.movie img {
+    width: 240px;
+    height: 340px;
+}
+
+.movie h2 {
+    text-align: center;
+    font-size: 0.975rem;
+    margin: 10px 0;
+    font-family: 'Ubuntu';
+
+}
+
+.movie h3 {
+    text-align: center;
+    font-size: 0.975rem;
+    margin: 10px 0;
+    font-family: 'Ubuntu';
+
+}
+
+.movie p {
+    text-align: justify;
+    /*font-size: 16px;*/
+    font-size: 0.975rem;
+    font-family: 'Ubuntu';
+
+}
+
+.texto {
+    color: aliceblue;
+}
+
+.padrino3 {
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 30px;
+    font-family: 'Ubuntu';
+}
+
+.sinopsis {
+    width: 300px;
+    height: 500px;
+    margin: 20px;
+    display: none;
+    opacity: 0;
+}
+
+/*.movie:hover>.animacion {
+    display: none;
+
+}*/
+
+/*.movie:hover>.sinopsis {
+    display: block;
+    transition-duration: 1s;    
+    opacity: 1;
+}*/
+.movie:hover ~ .movie {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    transition: 0.5s;
+}
+
+.movie:hover > .animacion {
+    width: 340px;
+    height: 540px;
+    z-index: 0;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    background-size: 50% auto;
+    transition: 0.3s;
+}
+
+
+ 

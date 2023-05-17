@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Imput 26/04/23</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        *{
+            font-family: poppins;
+        }
+        .caja{
+            background-color: #333;
+            width: 25%;
+            color: #efefef;
+            position: absolute;
+        }
+        .caja2{
+            background-color: #333;
+            width: 25%;
+            color: #efefef;
+            position: absolute;
+            left: 356px;
+        }
+        .blau{
+            color: red;
+        }
+        .verde{
+            color: greenyellow;
+        }
+        .naranja{
+            color: orange;
+        }
+    </style>
+</head>
+<body style="background-color: #334;">
+    <div class="caja">
+    <h1>Ex.Input</h1>
+    <label>Nombre:</label><br>
+    <input autocomplete="on" type="text"><br>
+    <label>Contraseña:</label><br>
+    <input type="password"><br>
+    <label>Elige color:</label><br>
+    <input type="color"><br>
+    <label>Data y hora local:</label><br>
+    <input type="datetime-local"><br>
+    <label>Correo:</label><br>
+    <input type="email"><br>
+    <label>Numero:</label><br>
+    <input type="number"><br>
+    <label>Archivos:</label><br>
+    <input type="file"><br>
+    <label>Imagen:</label><br>
+    <input type="image" src="./imagenes/lambo.png" width="50px"height50px><br>
+    <label>radio:</label><br>
+    <input checked type="radio"><br>
+    <label>rango:</label><br>
+    <input type="range"><br>
+    </div>
+    <div class="caja2">
+    <label>reset:</label><br>
+    <input type="reset"><br>
+    <label>search:</label><br>
+    <input type="search"><br>
+    <label>submit:</label><br>
+    <input type="submit"><br>
+    <label>Telefono</label><br>
+    <input type="tel"><br>
+    <label>tiempo</label><br>
+    <input type="time"><br>
+    <label>Url</label><br>
+    <input type="url"><br>
+    <label>Semana</label><br>
+    <input type="week"><br>
+    
+    Sugerencia para usar &ltlabel&gt &lt/label&gt<br>
+    para definir las etiquetas:<br> 
+    &lt;<span class="blau">input</span> <span class="verde">type</span>=<span class="naranja">"text"</span>&gt;<br>
+    &lt;<span class="blau">input</span> <span class="verde">type</span>=<span class="naranja">"checkbox"</span>&gt;<br>
+    &lt;<span class="blau">input</span> <span class="verde">type</span>=<span class="naranja">"radio"</span>&gt;<br>
+    &lt;<span class="blau">input</span> <span class="verde">type</span>=<span class="naranja">"file"</span>&gt;<br>
+    &lt;<span class="blau">input</span> <span class="verde">type</span>=<span class="naranja">"password"</span>&gt;<br>
+    
+    </div>  
+
+</body>
+</html>

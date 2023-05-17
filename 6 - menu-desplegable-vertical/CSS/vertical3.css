@@ -1,0 +1,31 @@
+/* *{border: 1px solid red;} */
+.nav{
+    display: block;
+    width: 230px;
+}
+.ul{
+    display: inline;
+}
+.li{
+    display: block;
+    position: relative;
+    
+    border-bottom: 2px solid aquamarine;
+    background-color: beige;
+}
+.li>.ul{
+    position: absolute;
+    top: 0;
+    left: 190px;
+    display: none;
+}
+.li:hover>.ul{
+    display: block;
+}
+a{
+    text-decoration: none;
+    padding: 16px;
+    width: calc(100% - 32px);
+    display: inline-block;
+}
+/*
