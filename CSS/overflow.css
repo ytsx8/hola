@@ -64,16 +64,16 @@ img {}
     height: 500px;
     margin: 20px;
     display: none;
-    opacity: 0;
+    opacity: 1;
 }
 
 .movie:hover>.animacion {
-    display: none;
+    visibility: hidden;
 
 }
 
 .movie:hover>.sinopsis {
-    display: block;
+    visibility: visible;
     transition-duration: 1s;    
     opacity: 1;
 }
