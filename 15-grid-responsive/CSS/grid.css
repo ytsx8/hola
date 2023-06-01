@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+body{
+  background-color: beige;
+}
+.header {
+    border: 1px solid blue;
+    padding: 15px;
+    display: grid;
+    place-content: center;
+    background-color: antiquewhite;
+    padding: 0;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px 15px 0px 0px;
+  }
+  /*************************************************/
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+/*************************************************/
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+nav ul li {
+    background: #334;
+
+}
+nav li div a{
+    text-decoration: none;
+}
+nav ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-size:20px;
+    padding: 35px 0px 35px 10px ;
+    font-family: poppins;
+    letter-spacing:1px;
+}
+nav ul li {
+    position:relative;
+    margin:0;
+    padding:0;
+}   
+nav ul li:hover {
+    background:#5b78a7;
+}
+nav ul ul {
+    display: none;
+    position:absolute;
+    top:0;
+    left:100%;
+    background:#eee;
+    padding:0;
+}   
+nav ul ul li {
+    float:none;
+    width:180px;    
+}   
+nav ul ul a {
+    line-height:120%;
+    padding:10px 15px;  
+}
+nav ul li:hover > ul {
+    display: block;
+}
+
+
+
+/******************************************************/
+
+  @media (max-width: 800px) {
+    .menres{
+      width: 100%;
+    }
+  }
+  @media (max-width: 800px) {
+    .mintittle{
+      position: relative;
+      left: 15%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .mintxt{
+      position: relative;
+      left: 15%;
+  }
+}
+@media (max-width: 800px) {
+  nav ul ul {
+    display: none;
+    position:relative;
+    top:100%;
+    left:0;
+    background:#eee;
+    padding:0px;
+  }   
+  nav ul ul li {
+    float:none;
+    width: auto;    
+  }
+  nav ul li a{
+    padding: 20px 0px 20px 10px ;
+  }
+  nav ul li {
+    background: #334;
+    border: 1px solid #4b59d5 ;
+  }
+
+  nav > ul >li >ul >li{
+    background: #336;
+  }
+  nav >ul> li>ul>li:hover {
+    background:#557dbc;
+  }
+}

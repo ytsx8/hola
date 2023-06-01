@@ -1,0 +1,110 @@
+<style>
+    .form {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form input {
+      width: 40%;
+      height: 30px;
+      margin: 0.5rem;
+    }
+
+    .contenedor {
+      display: flex;
+      position: relative;
+
+    }
+
+
+    .footer {
+      padding: 10px 5%;
+      background: #334;
+      color: #efefef;
+      display: flex;
+      bottom: 0;
+      margin-top: 300px;
+      
+    }
+    .footer div {
+      text-align: center;
+    }
+
+    .col-2 {
+      flex-grow: 2;
+    }
+
+    .social-icons {
+      margin-top: 30px;
+    }
+
+    .social-icons i {
+      font-size: 22px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .form-control {
+      width: 400px;
+      height: 45px;
+      border-radius: 4px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      outline: none;
+      border: none;
+    }
+
+    form select {
+      width: 383px;
+      height: 30px;
+      border-radius: 4px;
+      text-align: center;
+      margin-top: 10px;
+      margin-left: 9px;
+      outline: none;
+      border: none;
+    }
+
+    .botonformulario{
+      background: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      border-radius: 30px;
+      padding: 10px 30px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .form-control {
+      color: #333;
+    }
+  </style>
+</head>
+  <footer class="footer">
+    <div class="col-1">
+      <h3>Mapa</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11965.582623883098!2d2.17450885!3d41.43063585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bdb85c47c11b%3A0x2fa9fe0ca3ae28f5!2sMercadona!5e0!3m2!1ses!2ses!4v1682329173817!5m2!1ses!2ses"
+        width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <div class="col-2">
+      <h3>NEWSLETTER</h3>
+      <form>
+        <input class="form-control" type="email" placeholder="Deja Tu Email Aqui" required>
+        <br>
+        <button class="botonformulario" type="submit">SUBSCRIBETE</button>
+      </form>
+    </div>
+    <div class="social-icons">
+      <h3>Redes Sociales</h3>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-behance"></i>
+    </div>
+  </footer>

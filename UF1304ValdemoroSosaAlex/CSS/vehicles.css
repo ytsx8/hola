@@ -1,0 +1,377 @@
+@font-face {
+    font-family: "saveur";
+    src: url("../fonts/SaveurSansRound-Regular.ttf");
+} 
+@font-face {
+    font-family: "cars";
+    src: url("../fonts/MAGNETOB.TTF");
+}
+header{
+    background: #f8d2d2;
+    display: grid;
+    place-content: center;
+    width: 99.9%;
+    height: 100px;
+    font-weight: bolder;
+    font-family: "cars";
+    font-size: 22px;
+    border: 1px solid black;
+}
+body{
+    margin: 0;
+    background-color: rgb(218, 214, 214);
+}
+.home{
+    position: absolute;
+    top: 0;
+    top: 15px;
+    left: 5px;
+
+}
+/*INICIO FORMULARIO DE INICIO SESION*/
+.inputlogin{
+    margin: 5px;
+}
+.labels{
+    display: inline-block;
+    width: 80px;
+}
+input[type="checkbox"] + .labels{
+    display: inline-block;
+    width: auto;
+}
+.sesion{
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    background-color: rgb(179, 225, 248);
+}
+input[type="button"]{
+    background-color:rgba(222, 184, 135, 0.621);
+    border-width: 1px;
+}
+
+.sesion:hover{
+    display: block;
+}
+/*FIN FORMULARIO DE INICIO DE SESION*/
+
+/*INICO BARRA DE BUSQUEDA*/
+.barrabusqueda{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    align-content: center;
+    align-items: center;
+}
+.barrabusqueda .formulariodebarra {
+    width: 200px;
+    height: 50px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*FIN BARRA DE BUSQUEDA*/
+/*INICIO MENU LATERAL*/
+.menu{
+    width: 15%;
+    position: absolute;
+    /* display: none; */
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    background: #334;
+}
+nav li div a{
+    text-decoration: none;
+}
+nav ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-size:20px;
+    padding: 20px 0px 20px 10px ;
+    font-family: "saveur";
+    letter-spacing:1px;
+}
+nav ul li {
+    position:relative;
+    margin:0;
+    padding:0;
+}   
+nav ul li:hover {
+    background:#5b78a7;
+}
+nav ul ul {
+    display: none;
+    position:absolute;
+    top:0;
+    left:100%;
+    background:#eee;
+    padding:0;
+}   
+nav ul ul li {
+    float:none;
+    width:180px;    
+}   
+nav ul ul a {
+    line-height:120%;
+    padding:10px 5px;  
+}
+nav ul li:hover > ul {
+    display: block;
+}
+/*FIN MENU LATERAL*/
+/*INICIO BARRA DE BUSQUEDA*/
+.busqueda{
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+/*FIN BARRA DE BUSQUEDA*/
+
+/*INICIO DE CONTENIDO PRINCIPAL*/
+.contenidoprincipal{
+    width: auto;
+    margin-left: 300px;
+    margin-right: 300px;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: whitesmoke;
+    
+}
+.contenidoprincipal  img{
+    width: 600px;
+}
+.contenidoprincipal > p{
+    font-size: 16px;
+    font-family: poppins;
+}
+.container{
+    background-color: white;
+    
+
+}
+/*FIN DEL CONTENIDO PRINCIPAL*/
+
+/*INICIO FOOTER*/
+.footer {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    clear:both;
+    background: #333;
+    color: #efefef;
+    z-index: 0;
+    text-align: center;
+    
+}
+/*FINAL FOOTER*/
+
+/*INICIO MEDIA QUERYS*/
+@media (max-width: 800px) {
+    .menres{
+      width: 100%;
+      display: inline-block
+    }
+  }
+  @media (max-width: 800px) {
+    .mediaquerydivmenu{
+        height: 250px;
+    }
+  }
+  @media (max-width: 800px) {
+    .contenidoprincipal{
+        margin-left: 0px;
+        margin-right: 0;
+        background-color: transparent;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .mintxt{
+        left: 0;
+        width: 100%;
+    }
+}
+@media (max-width: 800px) {
+  nav ul ul {
+    display: none;
+    position:relative;
+    top:100%;
+    left:0;
+    background:#eee;
+    padding:0px;
+  }   
+  nav ul ul li {
+    float:none;
+    width: auto;    
+  }
+  nav ul li a{
+    padding: 20px 0px 20px 10px ;
+  }
+  nav ul li {
+    background: #334;
+    border: 1px solid #4b59d5 ;
+  }
+
+  nav > ul >li >ul >li{
+    background: #336;
+  }
+  nav >ul> li>ul>li:hover {
+    background:#557dbc;
+  }
+}
+@media (max-width: 800px) {
+    .busqueda{
+        position: relative;
+        left: 0;
+        
+    }
+}
+@media (max-width: 800px) {
+    .home{
+        position: relative;
+        top: 0;
+        
+    }
+}
+@media (max-width: 800px) {
+    .sesion{
+        position: relative;
+        
+    }
+}
+@media (max-width: 800px) {
+    #fr1{
+        margin-bottom: 0px;
+        border: 1px solid black;
+    }
+}
+@media (max-width: 800px) {
+    #fr2{
+        margin-bottom: 0px;
+        border: 1px solid black;
+    }
+}
+@media (max-width: 800px) {
+    #fr3{
+        margin-bottom: 0px;
+        border: 1px solid black;
+    }
+}
+@media (max-width: 800px) {
+    #fr4{
+        margin-bottom: 0px;
+        border: 1px solid black;
+    }
+}
+@media (max-width: 800px) {
+    #fr5{
+        margin-bottom: 0px;
+        border: 1px solid black;
+    }
+}
+@media (max-width: 800px) {
+    #fr6{
+        margin-bottom: 0px;
+        border: 1px solid black;
+    }
+}
+
+/*INICIO FORMULARIO DE CONSULTAS*/
+.formulario input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+  }
+
+  .formulario select {
+    width: 383px;
+    height: 30px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 9px;
+    outline: none;
+    border: none;
+  }
+
+  .formulario button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .form-control {
+    color: #333;
+  }
+/*FORMULARIO*/
+.principalderegistro {
+    padding: 16px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+#nombre[type=text],#apellido[type=text],#dni[type=text], #correo[type=text],#contraseña[type=password], #contra-repetir[type=password], #reset[type=reset] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  #correo[type=text]:focus, #contraseña[type=password]:focus, #contra-repetir[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }

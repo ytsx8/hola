@@ -1,0 +1,71 @@
+<style>
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    background: #334;
+}
+nav li div a{
+    text-decoration: none;
+}
+nav ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-size:20px;
+    padding: 35px 0px 35px 10px ;
+    font-family: poppins;
+    letter-spacing:1px;
+}
+nav ul li {
+    position:relative;
+    margin:0;
+    padding:0;
+}   
+nav ul li:hover {
+    background:#5b78a7;
+}
+nav ul ul {
+    display: none;
+    position:absolute;
+    top:0;
+    left:100%;
+    background:#eee;
+    padding:0;
+}   
+nav ul ul li {
+    float:none;
+    width:180px;    
+}   
+nav ul ul a {
+    line-height:120%;
+    padding:10px 15px;  
+}
+nav ul li:hover > ul {
+    display: block;
+}
+</style>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Historia</a>
+                    <ul>
+                        <li><a href="#">Actual</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Actualidad</a></li>
+                <li><a href="#">Quienes Somos</a>
+                    <ul>
+                        <li><a href="#">Personas</a></li>
+                        <li><a href="#">Donde Estamos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contacto</a>
+                    <ul>
+                        <li><a href="#">Consultas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <link rel="stylesheet" href="../CSS/vehicles.css">
+    <title>Don Transporte</title>
+</head>
+
+<body>
+    <header>
+        <h1>Don Transporte SL</h1>
+    </header>
+    <form action="#" method="get" id="iniciosesion" class="iniciosesion">
+        <fieldset class="sesion">
+            <legend>Inicio de sesion</legend>
+            <label for="usuari" class="labels">Usuario</label>
+            <input class="inputlogin" type="text" name="usuari" placeholder="usuari" minlength="4" maxlength="12"
+                required pattern="[A-Za-z0-9]+"
+                onkeydown="if(['Space'].includes(arguments[0].code)){return false;}"><br>
+            <label for="contraseña" class="labels">Contraseña</label>
+            <input class="inputlogin" type="password" name="contraseña" placeholder="contraseña" minlength="4"
+                maxlength="12" required pattern="[A-Za-z0-9]+"
+                onkeydown="if(['Space'].includes(arguments[0].code)){return false;}"><br>
+            <input class="inputlogin" type="checkbox" name="validacion" id="validacion">
+            <label class="labels" for="validacion">Acepta las condiciones</label><br>
+            <input class="inputlogin" type="button" id="enviar" value="Iniciar">
+        </fieldset>
+    </form>
+    <div class="busqueda">
+        <form action="/action_page.php" method="get">
+            <label for="browser"></label>
+            <input list="coches" name="browser" id="browser">
+            <datalist id="coches">
+                <option value="Ferrari">
+                <option value="MClaren">
+                <option value="lamborghini">
+            </datalist>
+            <input type="image" id="lupa" alt="Login" src="../images/lupa.png" style="width: 30px;height: 30px;">
+        </form>
+    </div>
+    <div class="home">
+        <a href="../index.html"><img src="../images/favicon.png" alt="logo" style="width: 30px;"></a>
+    </div>
+
+    <div class="mediaquerydivmenu">
+        <nav class="menu menres">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./top10.html">Los + Rapidos</a>
+                    <ul>
+                        <li><a href="./top10.html">Top 10</a></li>
+                    </ul>
+                </li>
+                <li><a href="./consultas.html">Contacto</a>
+                    <ul>
+                        <li><a href="./consultas.html">Consultas</a></li>
+                        <li><a href="./registro.html">Registro</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="contenidoprincipal">
+            <p style="font-style: italic;">Don Transporte SL</p>
+            <p>Ubicado en <a href="https://goo.gl/maps/Cyz16eJYLR3TC3Fv5">C/ de Casanova i Passatge de Carme
+                    Aymerich</a> </p>
+            <p></p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d343.11637461040874!2d2.1554606440650153!3d41.38780888220822!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a28f6e4123d7%3A0x38d33d6e4a3b280a!2sCarrer%20de%20Casanova%2C%20120%2C%2008036%20Barcelona!5e0!3m2!1sca!2ses!4v1685445167767!5m2!1sca!2ses"
+                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="form">
+                <form class="formulario holaaa">
+                    <input id="fr1" type="text" class="form-control" placeholder="Nombre" minlength="4" maxlength="12"
+                        required pattern="[A-Za-z0-9]+" />
+                    <input id="fr2" type="text" class="form-control" placeholder="Apellido" minlength="4" maxlength="12"
+                        required pattern="[A-Za-z0-9]+" />
+                    <input id="fr3" type="email" placeholder="Enter your email">
+
+                    <select id="fr4" name="motivo" class="form-control">
+                        <option value="" class="form-control" disabled selected hidden>Motivo de la consulta
+                        <option value="error" class="form-control">Soporte
+                        <option value="colab" class="form-control">Colaboracion
+                        <option value="copy" class="form-control">Derechos de Copyright
+                        <option value="error" class="form-control">Error en la pagina web
+                        <option value="otro" class="form-control">otro(escribir motivo)
+                    </select><br>
+                    <br><textarea id="fr5" name="textarea" rows="10" cols="50" placeholder="Escribe tu consulta aqui."
+                        minlength="4" maxlength="99" required pattern="[A-Za-z0-9]+"></textarea>
+                    <br><input id="fr6" type="submit" value="Submit">
+                    <input type="reset">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">Copyright capitalize© 2016-2017 ICS - Derechos De Autor Internacionales De Servicio.</div>
+</body>
+
+</html>

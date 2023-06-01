@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <link rel="stylesheet" href="../CSS/vehicles.css">
+    <title>Don Transporte</title>
+</head>
+
+<body>
+    <header>
+        <h1>Don Transporte SL</h1>
+    </header>
+    <form action="#" method="get" id="iniciosesion" class="iniciosesion">
+        <fieldset class="sesion">
+            <legend>Inicio de sesion</legend>
+            <label for="usuari" class="labels">Usuario</label>
+            <input class="inputlogin" type="text" name="usuari" placeholder="usuari" minlength="4" maxlength="12"
+                required pattern="[A-Za-z0-9]+"
+                onkeydown="if(['Space'].includes(arguments[0].code)){return false;}"><br>
+            <label for="contraseña" class="labels">Contraseña</label>
+            <input class="inputlogin" type="password" name="contraseña" placeholder="contraseña" minlength="4"
+                maxlength="12" required pattern="[A-Za-z0-9]+"
+                onkeydown="if(['Space'].includes(arguments[0].code)){return false;}"><br>
+            <input class="inputlogin" type="checkbox" name="validacion" id="validacion">
+            <label class="labels" for="validacion">Acepta las condiciones</label><br>
+            <input class="inputlogin" type="button" id="enviar" value="Iniciar">
+        </fieldset>
+    </form>
+    <div class="busqueda">
+        <form action="/action_page.php" method="get">
+            <label for="browser"></label>
+            <input list="coches" name="browser" id="browser">
+            <datalist id="coches">
+                <option value="Ferrari">
+                <option value="MClaren">
+                <option value="lamborghini">
+            </datalist>
+            <input type="image" id="lupa" alt="Login" src="../images/lupa.png" style="width: 30px;height: 30px;">
+        </form>
+    </div>
+    <div class="home">
+        <a href="../index.html"><img src="../images/favicon.png" alt="logo" style="width: 30px;"></a>
+    </div>
+    <div class="mediaquerydivmenu">
+        <nav class="menu menres">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./top10.html">Los + Rapidos</a>
+                    <ul>
+                        <li><a href="./top10.html">Top 10</a></li>
+                    </ul>
+                </li>
+                <li><a href="./consultas.html">Contacto</a>
+                    <ul>
+                        <li><a href="./consultas.html">Consultas</a></li>
+                        <li><a href="./registro.html">Registro</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="contenidoprincipal">
+            <h2>McLaren Senna</h2>
+            <img src="../images/mclaren.webp" alt="foto McLaren Senna">
+            <p>
+                Con el mismo motor que su hermano pequeño, el McLaren 765LT, pero elevando la potencia del bloque V8
+                biturbo de 4,0 litros hasta los 600 CV y 770 Nm de par en un coche de 1.374 kg. Un rendimiento soberbio
+                en curva gracias a su espectacular aerodinámica, un 0 a 100 km/h en 2,8 segundos y 340 km/h de velocidad
+                máxima. Digno de llevar el nombre de la leyenda de la F1, Ayrton Senna.</p>
+            <p>
+                <img src="../images/mclaren2.webp" alt="foto McLaren Senna">
+            <p>
+                Todos los automóviles se fabricarán a mano en el McLaren Production Center, de Woking, Surrey,
+                Inglaterra, con una producción de solamente 500 unidades, todas las cuales ya están vendidas.
+                El McLaren Senna tiene un precio de 750.000 libras con el vehículo final subastado a un precio de
+                1.916.793 libras.Las entregas comenzaron en el tercer trimestre de 2018
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-AJR-jR2bRU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="footer">Copyright © 2016-2017 ICS - Derechos De Autor Internacionales De Servicio.</div>
+</body>
+
+</html>

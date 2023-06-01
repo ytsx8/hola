@@ -80,7 +80,7 @@ nav ul li:hover {
     
 }
 nav ul ul {
-    opacity: 0;
+  display: none;
     transition-duration: 0.5s;
     position:absolute;
     top:0;
@@ -98,7 +98,7 @@ nav ul ul a {
 }
 nav ul li:hover > ul {
     display:block;
-    opacity: 1;
+    
 }
 /*Contenido Principal*/
 .cont{

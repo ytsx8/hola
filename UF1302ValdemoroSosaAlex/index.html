@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="./css/clubbarco.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></head>
+<body>
+    <div class="cont">
+        <header class="cabecera">
+            <span>CLUB BARCO</span>
+        </header>
+        <div class="caja">
+            <span>
+                <h1>
+                    El regalo que todos amarán
+                </h1>
+            </span>
+            <div class="interior">
+                <img class="imgtransition" src="./images/imagen1.jpg" alt="imagen de un vino">
+                <h2>DISCOVER CALIFORNIA WINES</h2>
+                <h3>Recibe totalmete <span style="color: #722F37;">GRATIS</span><br> la guía de los 75 mejores vinos de California</h3>
+            </div>
+            <div class="cajaform">
+                <div class="formulario">
+                <span>FORMULARIO DE CONTACTO</span>
+                <form action="formulario" id="webForm">
+                    <div class="principalderegistro">
+                      <label for="name"><b>Nombre</b></label>
+                      <input type="text" placeholder="Anthony Soprano" name="name" id="nombre" required minlength="3" maxlength="16"
+                      required pattern="[A-Za-z0-9]+">
+                      <label for="e-mail"><b>Email</b></label>
+                      <input type="email" placeholder="kratos@gmail.com" name="email" id="correo" required>
+                      <label for="text"><b>Teléfono de contacto</b></label>
+                      <input type="text" placeholder="611416722" name="email" id="correo" required minlength="9" maxlength="9" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+
+                      <label for="webInput">Página web</label><br>
+                      <input type="text" id="webInput" name="webInput" placeholder="www.youtube.com" required minlength="8" maxlength="99> 
+                      
+                      <label for="textarea"><b>Comentario</b></label>
+                      <textarea style="resize: none;" id="coment" name="comentario" rows="4" cols="53" placeholder="Mensaje"></textarea>
+                    <form   method="post" action="mailto:youremail@youremail.com" >
+                    <input class="registerbtn" type="submit" value="Enviar" /> 
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer"><footer>Wine Club Of California Copiryght © 2011-2016</footer></div>
+    </div>
+
+    
+</body>
+</html>
+
+
+  
+  

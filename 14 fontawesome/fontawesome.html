@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/contenido.css">
+    <title>Prueba de Font Awesome</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <!--cabecera-->
+    <div w3-include-html="../snippets/headersnippet.html"></div>
+    <!--menu-->
+    <div w3-include-html="../snippets/menusnippet.html"></div>
+    <div class="contenido"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non dui risus. Integer ultricies lacus vel est congue fermentum. Aliquam maximus dignissim tincidunt. Sed ante risus, luctus quis tincidunt sed, sollicitudin sit amet ipsum. Nulla facilisi. Maecenas nec tellus mattis, consequat nulla in, consectetur leo. Pellentesque magna ex, suscipit ac tempus non, eleifend a magna. Mauris volutpat sapien ac lectus facilisis, vel viverra metus suscipit. Sed et velit hendrerit libero eleifend lobortis. Integer sed ex arcu. Mauris placerat eget enim suscipit suscipit. Aliquam ultricies odio lacus. Donec suscipit eros ligula, eu eleifend massa facilisis et. Cras sodales, risus in dapibus cursus, quam ligula condimentum ligula, vitae sodales enim elit vel sapien. Fusce vitae turpis sed mi lobortis posuere. Aliquam quis imperdiet ligula, in cursus metus.</p>
+
+        <p>  Aliquam consectetur tellus sapien, sit amet accumsan nibh vestibulum ut. Etiam sem augue, blandit vel pretium ac, tincidunt a odio. Vivamus feugiat efficitur dui sit amet sollicitudin. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales gravida porttitor. Fusce non porta augue. Curabitur lacus lacus, mollis nec turpis at, interdum consectetur nunc. Duis luctus, enim varius cursus mattis, mauris velit molestie libero, a varius nulla erat nec velit.</p>
+        
+        <p>  Nam malesuada arcu vitae aliquet vestibulum. Suspendisse suscipit leo tincidunt metus dictum pretium. Vestibulum tempus convallis euismod. Sed id fringilla nisi. Sed vel sagittis lorem. Vivamus volutpat, urna vel pharetra pretium, tortor enim molestie nisi, eget iaculis orci eros quis eros. Vestibulum elementum tempus dignissim. Vestibulum est purus, imperdiet quis imperdiet nec, efficitur nec ante. Nunc venenatis nulla tempus justo finibus, eu ultricies lacus viverra. Aliquam dictum nisi sapien, a lacinia neque convallis eget. Nunc posuere augue a est consectetur dapibus. Quisque nisi dolor, tincidunt sed nibh et, elementum lacinia orci. Vivamus finibus sem orci, vitae posuere mauris molestie a. Proin at blandit neque. Praesent varius ipsum id libero efficitur, posuere bibendum tellus accumsan.</p>
+        
+        <p>  Praesent et egestas purus. Ut tempor condimentum odio non pellentesque. Suspendisse varius commodo orci, quis laoreet elit consectetur at. Vestibulum bibendum mauris quis enim viverra, quis pharetra odio aliquam. Morbi ante purus, tempus ac nunc et, varius elementum arcu. Ut euismod leo a dui congue ullamcorper. Suspendisse sit amet turpis purus. Sed eget ante sit amet lacus accumsan tempor id at dui. Maecenas pulvinar consequat dolor, at dapibus lorem posuere non. Phasellus tincidunt posuere nulla, ac ultricies metus fringilla at. Fusce congue fermentum augue, ac imperdiet dolor viverra varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi aliquam ac orci sodales euismod. Duis ac arcu elit.</p>
+        
+        <p>  Morbi et erat vulputate, ornare tortor sit amet, fermentum nibh. Pellentesque vel nulla tempor erat tempor egestas eget in ipsum. Suspendisse at diam ante. Nulla facilisi. Morbi iaculis tincidunt urna eget iaculis. Nullam ac nunc quis neque blandit rhoncus sed quis ex. Quisque a libero sit amet est condimentum luctus. Suspendisse interdum condimentum est in cursus. Sed nec ligula commodo, eleifend mauris nec, molestie urna.</p>
+    </div>
+    <!--footer-->
+    <div w3-include-html="../snippets/footersnippet.html"></div>
+</body>
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /* Make an HTTP request using the attribute value as the file name: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                        if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                        /* Remove the attribute, and call this function once more: */
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Exit the function: */
+                return;
+            }
+        }
+    }
+</script>
+<script>
+    includeHTML();
+</script>
+</html>

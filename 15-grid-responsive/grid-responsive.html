@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/grid.css">
+    <title>Grid Layout Responsive</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Grid Layout Responsive</h1>
+    </div>
+    <div class="row menu">
+        <nav class="col-2 menres">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Historia</a>
+                    <ul class="list">
+                        <li><a href="#">Actual</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Actualidad</a></li>
+                <li><a href="#">Quienes Somos</a>
+                    <ul class="list">
+                        <li><a href="#">Personas</a></li>
+                        <li><a href="#">Donde Estamos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contacto</a>
+                    <ul>
+                        <li><a href="#">Consultas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="col-10">
+            <h1 class="mintittle">Lorem ipsum </h1>
+            <p class="mintxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed mauris sodales, varius est id,
+                posuere
+                erat. Ut gravida, tortor vitae dapibus tristique, nisl nulla laoreet ipsum, at tincidunt mauris velit ut
+                magna. Morbi nisi leo, porttitor at nulla eget, pretium faucibus mi. Phasellus commodo turpis nec neque
+                ultricies pulvinar sed nec libero. Nulla facilisi. Donec at ligula ex. Vestibulum nec sollicitudin
+                risus, eu
+                porta purus. Duis non hendrerit justo. Pellentesque habitant morbi tristique senectus et netus et
+                malesuada
+                fames ac turpis egestas. Nulla auctor ex a felis molestie, at aliquet velit commodo. Pellentesque et
+                fermentum mi.</p>
+            <p class="mintxt">
+                Ut et urna molestie, molestie leo vitae, feugiat metus. Vestibulum mollis leo nisi, sed commodo ligula
+                maximus id. Sed condimentum tincidunt orci quis tempus. Quisque sit amet tellus a nunc tempus vulputate.
+                Nam
+                facilisis volutpat velit eu tincidunt. Sed dapibus dui risus, at rutrum justo fermentum id. Curabitur
+                iaculis, tortor sed tincidunt fringilla, dui mauris feugiat dolor, a vulputate eros nisl vel ex. Mauris
+                ut
+                mi in nulla ornare mattis. Sed fermentum consequat nulla non tempor. Nulla tincidunt augue tellus, eu
+                condimentum ante dignissim vel. In nec augue sit amet diam placerat blandit nec bibendum enim.
+                Suspendisse
+                molestie ante ipsum, sit amet volutpat diam laoreet at. Maecenas luctus sagittis dolor, sed scelerisque
+                lectus gravida et. Aliquam a tincidunt purus, id condimentum tellus. Nunc in ultricies nisl, in gravida
+                odio. Phasellus mollis erat dui, mattis ultricies metus iaculis eu.</p>
+        </div>
+    </div>
+
+</body>
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /* Make an HTTP request using the attribute value as the file name: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                        if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                        /* Remove the attribute, and call this function once more: */
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Exit the function: */
+                return;
+            }
+        }
+    }
+</script>
+<script>
+    includeHTML();
+</script>
+
+</html>

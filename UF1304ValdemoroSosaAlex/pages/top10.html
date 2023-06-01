@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <link rel="stylesheet" href="../CSS/vehicles.css">
+    <title>Don Transporte</title>
+</head>
+
+<body>
+    <header>
+        <h1>Don Transporte SL</h1>
+    </header>
+    <form action="#" method="get" id="iniciosesion" class="iniciosesion">
+        <fieldset class="sesion">
+            <legend>Inicio de sesion</legend>
+            <label for="usuari" class="labels">Usuario</label>
+            <input class="inputlogin" type="text" name="usuari" placeholder="usuari" minlength="4" maxlength="12"
+                required pattern="[A-Za-z0-9]+"
+                onkeydown="if(['Space'].includes(arguments[0].code)){return false;}"><br>
+            <label for="contraseña" class="labels">Contraseña</label>
+            <input class="inputlogin" type="password" name="contraseña" placeholder="contraseña" minlength="4"
+                maxlength="12" required pattern="[A-Za-z0-9]+"
+                onkeydown="if(['Space'].includes(arguments[0].code)){return false;}"><br>
+            <input class="inputlogin" type="checkbox" name="validacion" id="validacion">
+            <label class="labels" for="validacion">Acepta las condiciones</label><br>
+            <input class="inputlogin" type="button" id="enviar" value="Iniciar">
+        </fieldset>
+    </form>
+    <div class="busqueda">
+        <form action="/action_page.php" method="get">
+            <label for="browser"></label>
+            <input list="coches" name="browser" id="browser">
+            <datalist id="coches">
+                <option value="Ferrari">
+                <option value="MClaren">
+                <option value="lamborghini">
+            </datalist>
+            <input type="image" id="lupa" alt="Login" src="../images/lupa.png" style="width: 30px;height: 30px;">
+        </form>
+    </div>
+    <div class="home">
+        <a href="../index.html"><img src="../images/favicon.png" alt="logo" style="width: 30px;" ></a>
+    </div>
+    <div class="mediaquerydivmenu">
+        <nav class="menu menres">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./top10.html">Los + Rapidos</a>
+                    <ul>
+                        <li><a href="./top10.html">Top 10</a></li>
+                    </ul>
+                </li>
+                <li><a href="./consultas.html">Contacto</a>
+                    <ul>
+                        <li><a href="./consultas.html">Consultas</a></li>
+                        <li><a href="./registro.html">Registro</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="contenidoprincipal">
+            <h2>Maserati MC20</h2>
+            <a href="./top1.html"><img src="../images/masserati.webp" alt="foto Maserati MC20" ></a>
+            <h2>McLaren Senna</h2>
+            <a href="./top2.html"><img src="../images/mclaren.webp" alt="foto McLaren Senna" ></a>
+            <h2>Hennessey Venom F5</h2>
+            <a href="./top3.html"><img src="../images/hennesey.webp" alt="foto Hennessey Venom F5" ></a>
+            <h2>Lamborghini Huracán STO</h2>
+            <img src="../images/lambo.webp" alt="foto Lamborghini Huracán STO" ></a>
+            <h2>Aston Martin DB12</h2>
+            <img src="../images/astonmartin.jpeg" alt="foto Aston Martin DB12" ></a>
+            <h2>Porsche 718</h2>
+            <img src="../images/porche718.jpeg" alt="foto Porsche 718" ></a>
+            <h2>Lamborghini Esperienza Neve</h2>
+            <img src="../images/lamboesperienza.webp" alt="foto Lamborghini Esperienza Neve" ></a>
+            <h2>Dodge Challenger R/T Scat Pack</h2>
+            <img src="../images/dodge.jpg" alt="foto Dodge Challenger R/T Scat Pack" ></a>
+            <h2>Mercedes-AMG GT</h2>
+            <img src="../images/mercedesamg.jpeg" alt="foto Mercedes-AMG GT" ></a>
+            <h2>Corvette Z06</h2>
+            <img src="../images/corvettez06.jpeg" alt="foto Corvette Z06" ></a>
+        </div>
+    </div>
+</body>
+
+</html>
