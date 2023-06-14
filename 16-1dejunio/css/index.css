@@ -1,0 +1,8 @@
+article div {
+    display: flex;
+}
+
+article img {
+    width: 50%;
+    margin: 2%;
+}

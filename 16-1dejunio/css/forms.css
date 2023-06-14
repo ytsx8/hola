@@ -1,0 +1,13 @@
+form {
+    width: 70%;
+    margin: 20px auto;
+}
+input,textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 4px 6px;
+}
+textarea {
+    resize: none;
+    height: 100px;
+}

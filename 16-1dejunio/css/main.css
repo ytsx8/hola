@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+html , body {
+    height: 100%;
+}
+/* main */
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/* header */
+header {
+    padding: 20px;
+    background-color: bisque;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+header img {
+    width: 100px;
+}
+header ul li {
+    display: inline;
+    margin: 5px;
+}
+/* contenido principal */
+main{
+    padding: 20px;
+    flex-grow: 1;
+}
+/* pie de pagina */
+footer{
+    padding: 20px;
+    background-color: bisque;
+    text-align: center;
+}
